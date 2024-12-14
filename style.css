@@ -96,5 +96,16 @@ ul li {
     border: 1px solid black;
     border-radius: 5px;
     margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#inicio img{
+    max-width: 400px;
+    aspect-ratio: 16/9;
 }
 
