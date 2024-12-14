@@ -32,3 +32,7 @@ Este archivo contiene los estilos CSS para la página web, incluyendo:
 
 1. Clona el repositorio en tu máquina local.
 2. Abre el archivo `index.html` en tu navegador web para ver la página.
+
+## ¿Como veo la pagina web?
+- Ingresa a la siguiente liga:
+[Soluciones Tecnologicas](https://andresarguelles.github.io/soluciones-tenologicas-parte-uno/)
