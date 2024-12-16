@@ -15,6 +15,20 @@ ul li {
     list-style: none;
 }
 
+button {
+    cursor: pointer;
+    display: block;
+    width: 40%;
+    height: 2rem;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+}
+
+button:hover {
+    background-color: rgb(210, 11, 11);
+}
+
 /*Definiendo las areas de la grilla*/
 
 .grid-areas {
@@ -23,24 +37,27 @@ ul li {
     min-height: 300px;
 }
 
-.grid-areas .grid-element {
-    padding: 1rem;
-}
-
 /*Definiendo los estilos por area de la grilla*/
 
 .header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    column-gap: 1.5rem;
+    justify-content: center;
+    column-gap: 5rem;
     row-gap: .5rem;
     align-items: baseline;
+    padding: 1rem;
+}
+
+.header nav ul li a:hover{
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .header h1 {
-    font-weight: inherit;
-    color: rgba(255, 98, 0, 0.801);
+    font-weight: 600;
+    text-align: center;
 }
 
 .header nav ul{
@@ -56,24 +73,27 @@ ul li {
     column-gap: .5rem;
 }
 
-/*Definiendo los estilos de las secciones*/
 
+/*Definiendo los estilos de las secciones*/
 .section {
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 1rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    row-gap: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
 }
 
-#inicio img{
-    /* El tamaño de la imagen se ajusta al tamaño del contenedor */
-    width: 100%;
-    height: auto;
+/*Definiendo el estilo de la seccion principal*/
+#inicio {
+    background-color: rgba(248, 222, 222, 0.432);
+    min-height: 350px;
+    text-align: center;
+    row-gap: 1rem;
+}
+
+#inicio h2 {
+    font-weight: 600;
 }
 
