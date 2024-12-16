@@ -98,6 +98,7 @@ main {
     align-items: center;
     row-gap: 1rem;
     padding: 2rem 1rem 2rem 1rem;
+    scroll-margin-top: 50px; /*Para que el scroll no tape el titulo de la seccion*/
 }
 
 .section h2 {
