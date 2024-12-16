@@ -15,6 +15,10 @@ ul li {
     list-style: none;
 }
 
+/* .menu-icon {
+    display: none !important;
+} */
+
 button {
     cursor: pointer;
     display: block;
@@ -111,4 +115,28 @@ main {
     min-height: 350px;
     text-align: center;
     row-gap: 1rem;
+}
+
+@media screen and (max-width: 360px) {
+    .header nav ul {
+        /* flex-direction: column;
+        row-gap: 1rem; */
+        display: none;
+    }
+/* 
+    .menu-icon {
+        display: block !important;
+        position: absolute;
+        top: 97px;
+        left: calc(50% - self);
+        cursor: pointer;
+    }
+
+    .menu-icon:hover {
+        color: red;
+    }
+
+    .header nav ul:active {
+        display: block;
+    } */
 }
