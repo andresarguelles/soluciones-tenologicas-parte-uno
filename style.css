@@ -15,11 +15,7 @@ ul li {
     list-style: none;
 }
 
-/* .menu-icon {
-    display: none !important;
-} */
-
-button {
+button, #contacto a{
     cursor: pointer;
     display: block;
     width: 40%;
@@ -51,22 +47,36 @@ button:hover {
     justify-content: center;
     column-gap: 5rem;
     row-gap: 1rem;
-    align-items: baseline;
+    align-items: last baseline;
     padding: 1rem;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.header nav ul li a:hover{
-    color: red;
-    text-decoration: underline;
-    text-underline-offset: 5px;
+.header div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .header h1 {
     font-weight: 700;
     text-align: center;
+}
+
+.header img{
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.header nav ul li a:hover{
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .header nav ul{
@@ -87,6 +97,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
     column-gap: .5rem;
     row-gap: .5rem;
     padding: 1rem;
@@ -117,22 +128,18 @@ main {
     row-gap: 1rem;
 }
 
-#contacto ul{
+#contacto div{
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 1rem;
-    padding: 1rem;
+    width: 100%;
 }
 
-#contacto li a{
-    background-color: red;
-    display: inline-block;
-    padding: .5rem 1rem;
-    color: white;
-    text-align: center;
-    border-radius: 1rem;
+#contacto a:hover{
+    background-color: rgb(210, 11, 11);
 }
 
 @media screen and (max-width: 360px) {
@@ -141,21 +148,5 @@ main {
         row-gap: 1rem; */
         display: none;
     }
-/* 
-    .menu-icon {
-        display: block !important;
-        position: absolute;
-        top: 97px;
-        left: calc(50% - self);
-        cursor: pointer;
-    }
-
-    .menu-icon:hover {
-        color: red;
-    }
-
-    .header nav ul:active {
-        display: block;
-    } */
 }
 
