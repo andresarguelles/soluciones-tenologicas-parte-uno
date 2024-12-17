@@ -17,7 +17,9 @@ ul li {
 
 button, #contacto a{
     cursor: pointer;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40%;
     height: 2rem;
     background-color: red;
