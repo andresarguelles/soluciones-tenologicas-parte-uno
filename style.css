@@ -22,6 +22,7 @@ button, #contacto a{
     align-items: center;
     width: 40%;
     height: 2rem;
+    font-size: .8rem;
     background-color: red;
     color: white;
     border-radius: 1rem;
@@ -144,11 +145,13 @@ main {
     background-color: rgb(210, 11, 11);
 }
 
+@media  screen and (max-width: 506px) {
+    .section {
+        scroll-margin-top: 180px 
+}
+
 @media screen and (max-width: 360px) {
     .header nav ul {
-        /* flex-direction: column;
-        row-gap: 1rem; */
         display: none;
     }
 }
-
