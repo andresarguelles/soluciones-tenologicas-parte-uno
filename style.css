@@ -148,6 +148,7 @@ main {
 @media  screen and (max-width: 506px) {
     .section {
         scroll-margin-top: 180px 
+    }
 }
 
 @media screen and (max-width: 360px) {
