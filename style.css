@@ -40,6 +40,7 @@ button:hover {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 300px;
+    font-size: 16px;
 }
 
 /*Definiendo los estilos por area de la grilla*/
@@ -115,14 +116,27 @@ button:hover {
 
 .standard-block .block-items{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
+    max-width: 1000px;
     margin: 0 auto;
     row-gap: 1rem;
+    column-gap: 1.5rem;
     padding: 2rem 1rem 2rem 1rem;
+}
+
+.block-items .texto{
+    flex: 55;
+}
+
+.block-items .imagen{
+    flex: 45;
+}
+
+.block-items img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
 }
 
 /*Definiendo el estilo de la seccion principal*/
@@ -132,6 +146,8 @@ button:hover {
 }
 
 #inicio .block-items{
+    flex-wrap: wrap;
+    flex-direction: column;
     min-height: 350px;
     text-align: center;
 }
@@ -153,6 +169,10 @@ button:hover {
 @media  screen and (max-width: 893px) {
     .standard-block {
         scroll-margin-top: 90px
+    }
+
+    .standard-block .block-items{
+        flex-direction: column;
     }
 
     #inicio{
