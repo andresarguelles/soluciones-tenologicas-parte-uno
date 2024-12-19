@@ -23,12 +23,12 @@ button, #contacto a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
     height: 2rem;
     font-size: .8rem;
     background-color: red;
     color: white;
     border-radius: 1rem;
+    padding: 1rem;
 }
 
 button:hover {
