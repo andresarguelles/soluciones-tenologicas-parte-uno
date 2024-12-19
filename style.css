@@ -7,7 +7,6 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    color: black;
 }
 
 h1{
@@ -89,6 +88,10 @@ button:hover {
     list-style: none;
 }
 
+.header .menu a{
+    color: black;
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -141,7 +144,14 @@ button:hover {
 
 /*Definiendo el estilo de la seccion principal*/
 #inicio {
-    background-color: rgba(248, 222, 222, 0.432);
+    /* background-color: rgba(248, 222, 222, 0.432); */
+    background-color: rgba(171, 15, 15, 0.87);
+    background-image: url(https://tiendaneolo.com/tutoriales/wp-content/uploads/2023/12/Como-vender-online-accesorios-para-celulares-y-computadoras-scaled.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-blend-mode: multiply; /*Combina el color y la imagen definidas en el background*/
     scroll-margin-top: 80px;
 }
 
@@ -150,6 +160,7 @@ button:hover {
     flex-direction: column;
     min-height: 350px;
     text-align: center;
+    color: white;
 }
 
 #contacto div{
